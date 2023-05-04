@@ -10,19 +10,6 @@ router = APIRouter(
     tags=["distance"]
 )
 
-
-class Mode(str, Enum):
-    driving = "driving"
-    walking = "walking"
-    bicycling = "bicycling"
-    transit = "transit"
-
-
-class Units(str, Enum):
-    metric = "metric"
-    imperial = "imperial"
-
-
 class ResponseDistance(BaseModel):
     distance: str
     duration: str
