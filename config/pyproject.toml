@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "distance-calculator-api"
+version = "0.0.1"
+description = ""
+authors = ["marinsmh <marina.martin.hernandez@outlook.com>"]
+readme = "README.md"
+packages = [{include = "distance_calculator_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.95.1"
+uvicorn = "^0.22.0"
+requests = "^2.30.0"
+pytest = "^7.3.1"
+httpx = "^0.24.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

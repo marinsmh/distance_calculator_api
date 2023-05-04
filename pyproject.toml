@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "distance-calculator"
+version = "0.1.0"
+description = ""
+authors = ["marinsmh <marina.martin.hernandez@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.3.1"
+requests = "^2.30.0"
+pytest-cov = "^4.0.0"
+uvicorn = "^0.22.0"
+fastapi = "^0.95.1"
+starlette = "^0.26.1"
+httpx = "^0.24.0"
+googlemaps = "^4.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
