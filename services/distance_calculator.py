@@ -19,9 +19,9 @@ class ResponseDistance(BaseModel):
 async def distance(
         origin: str = Query(..., description="Starting point", example="Madrid"),
         destination: str = Query(..., description="Destination point", example="Budapest"),
-        mode: str = Query(..., description="Mode of transportation: driving/walking/bicycling/transit "
+        mode: str = Query(..., description="Transport mode: driving, walking, bicycling, transit "
                                            "(by default: driving)", example="driving"),
-        units: str = Query(..., description="Units of measurement: metric/imperial "
+        units: str = Query(..., description="Measurement units: metric, imperial "
                                             "(by default: metric)", example="metric")
 ):
     """
